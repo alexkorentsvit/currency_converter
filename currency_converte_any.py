@@ -32,7 +32,10 @@ def currency_converter():
         except ValueError:
             print("The entered amount is not a number")
         else:
-            flag2 = True
+            if summa <= 0:
+                print("The entered amount must be positive")
+            else:
+                flag2 = True
 
     #currency
     while flag3 == False:
